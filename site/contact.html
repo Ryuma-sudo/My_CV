@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact — My CV">
+  <link rel="icon" type="image/x-icon" href="/site/assets/favicon.ico">
+  <title>Contact — My CV</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Contact</h1>
+      <br>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Get in touch</h2>
+      <form id="contactForm" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal information</legend>
+
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required minlength="2">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9\-+() ]{7,}" aria-describedby="phoneHelp">
+          <small id="phoneHelp">Include country code if applicable.</small>
+
+          <label for="password">Password (for demo)</label>
+          <input type="password" id="password" name="password" required pattern=".{6,}">
+
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="13" max="120">
+
+          <label for="birth">Birth date</label>
+          <input type="date" id="birth" name="birth">
+
+          <label for="satisfaction">Satisfaction</label>
+          <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" step="1">
+
+          <label for="favcolor">Favorite color</label>
+          <input type="color" id="favcolor" name="favcolor" value="#3366cc">
+
+          <label for="resumeFile">Upload resume</label>
+          <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx">
+
+          <input type="hidden" name="source" value="website_contact">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Contact via:</p>
+          <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+          <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+
+          <p>Interests:</p>
+          <label><input type="checkbox" name="interests" value="web"> Web</label>
+          <label><input type="checkbox" name="interests" value="design"> Design</label>
+          <label><input type="checkbox" name="interests" value="data"> Data</label>
+
+          <label for="role">Role interested</label>
+          <select id="role" name="role">
+            <optgroup label="Development">
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="design">Design</option>
+              <option value="research">Research</option>
+            </optgroup>
+          </select>
+
+          <label for="city">City (suggestions)</label>
+          <input list="cities" id="city" name="city">
+          <datalist id="cities">
+            <option value="Ho Chi Minh">
+            <option value="Quy Nhon">
+            <option value="Da Nang">
+          </datalist>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn alt">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ryuma</p>
+    </div>
+  </footer>
+
+  <script src="js/form-validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

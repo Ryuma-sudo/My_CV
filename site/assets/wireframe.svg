@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Wireframe sketch of website">
+  <rect width="800" height="600" fill="#0b1220"/>
+  <rect x="40" y="40" width="720" height="80" rx="8" fill="#142134"/>
+  <rect x="40" y="140" width="500" height="320" rx="8" fill="#0f2133"/>
+  <rect x="560" y="140" width="200" height="150" rx="8" fill="#0f2133"/>
+  <rect x="560" y="310" width="200" height="150" rx="8" fill="#0f2133"/>
+  <text x="60" y="90" fill="#8aa0c5" font-size="16">Header / Nav</text>
+  <text x="60" y="180" fill="#8aa0c5" font-size="14">Main content</text>
+  <text x="580" y="180" fill="#8aa0c5" font-size="14">Sidebar</text>
+</svg>

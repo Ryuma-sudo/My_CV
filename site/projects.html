@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects — My CV">
+  <link rel="icon" type="image/x-icon" href="/site/assets/favicon.ico">
+  <title>Projects — My CV</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Projects</h1>
+      <br>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <article class="project-card">
+            <div class="project-body">
+              <h3>Remote_Desktop_IntelliJ</h3>
+              <figure>
+                <video controls width="480" height="270" aria-labelledby="rd-demo-caption">
+                  <source src="assets/Remote_desktop_demo.mp4" type="video/mp4">
+                  <!-- fallback -->
+                  Your browser does not support the video tag. You can <a href="assets/Remote_desktop_demo.mp4">download
+                    the demo</a> instead.
+                </video>
+                <figcaption id="rd-demo-caption">Remote Desktop demo video (controls available). See repository for full
+                  source.</figcaption>
+              </figure>
+              <br>
+              <p>A Java Swing remote-desktop application (server + client). The server captures the screen and streams
+                PNG frames; the client displays them and sends mouse/keyboard events back. Uses sockets,
+                DataInput/Output streams and Robot for event control.</p>
+              <p><strong>Tech:</strong> Java, Swing, Sockets, ImageIO</p>
+              <p class="project-links">
+                <a class="btn" href="https://github.com/Ryuma-sudo/Remote_Desktop_IntelliJ" target="_blank"
+                  rel="noopener noreferrer">GitHub Repository</a>
+                <a class="btn alt" href="https://github.com/Ryuma-sudo/Remote_Desktop_IntelliJ/blob/main/README.md"
+                  target="_blank" rel="noopener noreferrer">Repo README</a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <br>
+        <li>
+          <article class="project-card">
+            <div class="project-body">
+              <h3>Watch_anywhere (PDM group projet)</h3>
+              <figure>
+                <a href="https://github.com/johnnybinh/pdm_project" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/Watch_Anywhere_demo.png" alt="PDM project demo image (click to open repository)"
+                    width="480" height="270">
+                </a>
+                <figcaption>PDM project demo image — click to open repository</figcaption>
+              </figure>
+              <br>
+              <p>A simple Video Streaming platform.</p>
+              <p><strong>Tech:</strong> MySQL, Java, Spring boot, ReactJS</p>
+              <p class="project-links">
+                <a class="btn" href="https://github.com/johnnybinh/pdm_project" target="_blank"
+                  rel="noopener noreferrer">GitHub Repository</a>
+                <a class="btn alt" href="https://github.com/johnnybinh/pdm_project/blob/main/README.md" target="_blank"
+                  rel="noopener noreferrer">Repo README</a>
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ryuma</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
